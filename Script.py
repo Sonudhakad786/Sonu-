@@ -13,7 +13,7 @@ class script(object):
     
     CAPTION = """<b>📂 ғɪʟᴇɴᴀᴍᴇ : {file_Caption}
 
-sɪᴢᴇ ⚙️: {file_size}
+sɪᴢᴇ ⚙️: {file_name}
 
 Jᴏɪɴ [Deendayal dhakad](https://t.me/Deendayal_dhakad)</b>""" 
 
@@ -60,7 +60,7 @@ Cᴜʀʀᴇɴᴛ Sʜᴏʀᴛᴇɴᴇʀ API:</b> `{shortener_api}`"""
 
 🤖 ᴍʏ ɴᴀᴍᴇ: {}
 
-📝 ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>𝐏𝐲𝐭𝐡𝐨𝐧𝟑</a>
+📝 ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>Python</a>
 
 📚 ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org>𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦</a>
 
