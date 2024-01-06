@@ -96,7 +96,7 @@ class Var(object):
     if HAS_SSL:
         URL = "https://store-bot-splo.onrender.com"
     else:
-        URL = "https://store-bot-splo.onrender.com"
+        URL = "https://store-bot-splo.onrender.com/"
 
 
 
