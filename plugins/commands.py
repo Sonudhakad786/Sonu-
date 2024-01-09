@@ -117,7 +117,7 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             try:
-                h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</b>")
+                h = await message.reply_text(f"<b>Files will be deleted in 30 minutes to avoid copyright issues.<b><u>{AUTO_DELETE} mins</b>Please forward and save them.</b>")
                 k = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
@@ -173,7 +173,7 @@ async def start(client, message):
                     file_name = getattr(media, 'file_name', '')
                     f_caption = getattr(msg, 'caption', file_name)
                 try:
-                    h = await message.reply_text(f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>{AUTO_DELETE} minutes</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</b>")
+                    h = await message.reply_text(f"<b>Files will be deleted in 30 minutes to avoid copyright issues.<b><u>{AUTO_DELETE} mins</b>Please forward and save them.</b>")
                     k = await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False)
                     
                     asyncio.create_task(delete_after_delay(k, AUTO_DELETE_TIME))
@@ -235,7 +235,7 @@ async def start(client, message):
                     ]
                 )
             )
-            k = await msg.reply(f"<b><u>Files will be deleted in 30 minutes to avoid copyright issues.<b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>Please forward and save them.</b>",quote=True)
+            k = await msg.reply(f"<b><u>Files will be deleted in 30 minutes to avoid copyright issues.<b><u>{AUTO_DELETE} mins</u></b>Please forward and save them.</b>",quote=True)
             await asyncio.sleep(AUTO_DELETE_TIME)
             await msg.delete()
             await g.delete()
