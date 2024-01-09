@@ -117,7 +117,7 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             try:
-                h = await message.reply_text(f"<b>Files will be deleted in 30 minutes to avoid copyright issues.<b><u>{AUTO_DELETE} mins</b>Please forward and save them.</b>")
+                h = await message.reply_text(f"<b>Files will be deleted in 30 minutes to avoid copyright issues.Please forward and save them.</b>")
                 k = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
@@ -151,7 +151,7 @@ async def start(client, message):
         sts = await message.reply("**🔺 ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ**")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
-        await message.reply_text(f"<b><u>Files will be deleted in 30 minutes to avoid copyright issues.<b><u>{AUTO_DELETE} mins</u> 🫥 <i></b>Please forward and save them.</b>")
+        await message.reply_text(f"<b><u>Files will be deleted in 30 minutes to avoid copyright issues.Please forward and save them.</b>")
                
         try:
             f_msg_id, l_msg_id, f_chat_id, protect = decoded.split("_", 3)
@@ -235,7 +235,7 @@ async def start(client, message):
                     ]
                 )
             )
-            k = await msg.reply(f"<b><u>Files will be deleted in 30 minutes to avoid copyright issues.<b><u>{AUTO_DELETE} mins</u></b>Please forward and save them.</b>",quote=True)
+            k = await msg.reply(f"<b><u>Files will be deleted in 30 minutes to avoid copyright issues.Please forward and save them.</b>",quote=True)
             await asyncio.sleep(AUTO_DELETE_TIME)
             await msg.delete()
             await g.delete()
