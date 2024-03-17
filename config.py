@@ -45,8 +45,8 @@ DB_NAME = environ.get("DB_NAME", "vjbotz")
 # Ask Doubt on telegram @KingVJ01
 
 # Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
-BOT_USERNAME = environ.get("BOT_USERNAME", "Deendayal_File_Store_bot") # your bot username without @
+BOT_TOKEN = environ.get("BOT_TOKEN", "6741008228:AAFZJlYipOTdpuEY7tnGZiV7EpSgUbz2BTU")
+BOT_USERNAME = environ.get("BOT_USERNAME", "Super4search_bot") # your bot username without @
 PICS = (environ.get('PICS', 'https://graph.org/file/118a227a8170cafb6a4dd.jpg https://graph.org/file/118a227a8170cafb6a4dd.jpg https://graph.org/file/118a227a8170cafb6a4dd.jpg')).split() # Bot Start Picture
 
 # Auto Delete Information
