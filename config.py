@@ -30,14 +30,14 @@ def is_enabled(value, default):
 # Ask Doubt on telegram @KingVJ01
       
 # Owner Information
-API_ID = int(environ.get("API_ID", "16681004"))
-API_HASH = environ.get("API_HASH", "161b61f5a06dd299a3d88a3384b9f104")
-ADMINS = int(environ.get("ADMINS", "6646028262"))
+API_ID = int(environ.get("API_ID", ""))
+API_HASH = environ.get("API_HASH", "")
+ADMINS = int(environ.get("ADMINS", ""))
 
 # Database Information
-CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://deendayaldeenu84:r2sXoWGr3oYESdmS@cluster0.yhrcfhi.mongodb.net/?retryWrites=true&w=majority")
+CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
 CDB_NAME = environ.get("CDB_NAME", "clonevjbotz")
-DB_URI = environ.get("DB_URI", "mongodb+srv://deendayaldeenu84:r2sXoWGr3oYESdmS@cluster0.yhrcfhi.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = environ.get("DB_URI", "")
 DB_NAME = environ.get("DB_NAME", "vjbotz")
 
 # Don't Remove Credit Tg - @VJ_Botz
@@ -45,7 +45,7 @@ DB_NAME = environ.get("DB_NAME", "vjbotz")
 # Ask Doubt on telegram @KingVJ01
 
 # Bot Information
-BOT_TOKEN = environ.get("BOT_TOKEN", "6460619866:AAEB4vuo8FLGOCea8pq8s4KqFaUay1GU8r0")
+BOT_TOKEN = environ.get("BOT_TOKEN", "")
 BOT_USERNAME = environ.get("BOT_USERNAME", "Deendayal_File_Store_bot") # your bot username without @
 PICS = (environ.get('PICS', 'https://graph.org/file/118a227a8170cafb6a4dd.jpg https://graph.org/file/118a227a8170cafb6a4dd.jpg https://graph.org/file/118a227a8170cafb6a4dd.jpg')).split() # Bot Start Picture
 
