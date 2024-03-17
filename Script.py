@@ -11,7 +11,7 @@ class script(object):
 # Ask Doubt on telegram @KingVJ01
 
     
-    CAPTION="""**<b><a href=https://t.me/Deendayal_dhakad><b>{file_caption}<b>**</a>
+    CAPTION="""**<b><a href=https://t.me/Deendayal_dhakad><b>{file_name}<b>**</a>
 
 <b> Size ⚙️: {file_size}
 
